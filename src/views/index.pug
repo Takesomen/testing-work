@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(name='viewport', content='width=device-width')
+        title Поиск пользователя
+        link(rel="stylesheet", href="/static/css/styles.css")
+    body
+        main
+            form(action="/", method="post").container
+                div.row Имя пользователя: 
+                    input(type="text" name="user")
+                div.row 
+                    input(type="submit", value="Поиск").button 
